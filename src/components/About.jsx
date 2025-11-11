@@ -51,7 +51,7 @@ export default function About() {
             Outside of school and projects, <span className="text-violet-400 font-semibold">music</span> is a huge part of my life. 
             I’ve been learning the <span className="text-pink-400 font-semibold">Indian classical flute</span> for several years, 
             and it has become my way to unwind and stay balanced. 
-            It reminds me that <span className="text-violet-400 font-semibold">creativity and precision</span> can go hand in hand — 
+            It reminds me that <span className="text-violet-400 font-semibold">creativity and precision</span> can go hand in hand, 
             whether I’m playing a raga or writing code <span className="text-pink-400 font-semibold">:)</span>.
           </p>
 
