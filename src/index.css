@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans; /* uses Inter by default */
+  }
+}
+
+@keyframes gradient-wave {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.15);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.animate-gradient-wave {
+  animation: gradient-wave 8s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Fade hero section slightly when leaving view */
+section[id="home"] {
+  transition: opacity 0.6s ease;
+  opacity: 1; /* fully visible on load */
+}
+
+section[id="home"].aos-animate {
+  opacity: 0.3; /* fades slightly when you scroll away */
+}
