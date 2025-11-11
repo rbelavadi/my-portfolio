@@ -9,7 +9,7 @@ export default function About() {
         {/* Left Column - Image */}
         <div className="w-1/3 flex justify-center">
           <img
-            src="/src/assets/Ranjani_Causal_Photo.jpeg"
+            src="/Ranjani_Causal_Photo.jpeg"
             alt="Ranjani Belavadi"
             className="rounded-3xl shadow-[0_0_30px_rgba(236,72,153,0.3)] border-2 border-transparent bg-gradient-to-br from-violet-600 to-pink-500 p-[2px]"
           />
