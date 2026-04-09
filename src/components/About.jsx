@@ -2,21 +2,21 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center px-12 py-24 text-gray-100 bg-transparent"
+      className="min-h-screen flex items-center justify-center px-6 md:px-12 py-24 text-gray-100 bg-transparent"
       data-aos="fade-up"
     >
-      <div className="flex flex-row items-center justify-center gap-16 w-full max-w-7xl">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-7xl">
         {/* Left Column - Image */}
-        <div className="w-1/3 flex justify-center">
+        <div className="w-full md:w-1/3 flex justify-center">
           <img
             src="/Ranjani_Causal_Photo.jpeg"
             alt="Ranjani Belavadi"
-            className="rounded-3xl shadow-[0_0_30px_rgba(236,72,153,0.3)] border-2 border-transparent bg-gradient-to-br from-violet-600 to-pink-500 p-[2px]"
+            className="rounded-3xl shadow-[0_0_30px_rgba(236,72,153,0.3)] border-2 border-transparent bg-gradient-to-br from-violet-600 to-pink-500 p-[2px] max-w-xs w-full md:max-w-none"
           />
         </div>
 
         {/* Right Column - Text */}
-        <div className="w-2/3">
+        <div className="w-full md:w-2/3">
           <h2
             className="font-heading text-4xl font-bold text-transparent bg-clip-text mb-4 inline-block"
             style={{

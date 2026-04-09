@@ -4,13 +4,13 @@ export default function Skills() {
       title: "Programming Languages",
       icon: "💻",
       color: "from-indigo-900/50 to-indigo-700/30",
-      skills: ["Python", "C++", "Java", "JavaScript"],
+      skills: ["Python", "C++", "Java", "JavaScript/TypeScript"],
     },
     {
       title: "Frameworks",
       icon: "🧩",
       color: "from-purple-900/50 to-purple-700/30",
-      skills: ["React.js", "Node.js", "Tailwind CSS", "Vite", "FastAPI", "Express"],
+      skills: ["React.js", "Node.js", "Tailwind CSS", "Vite", "Next.js", "Flask", "FastAPI", "Express"],
     },
     {
       title: "AI & Backend Systems",
@@ -22,7 +22,7 @@ export default function Skills() {
       title: "Databases & Cloud Tools",
       icon: "☁️",
       color: "from-pink-900/50 to-fuchsia-700/30",
-      skills: ["MongoDB", "SQL", "Firebase", "AWS", "GCP", "Git", "Data Pipelines", "CI/CD"],
+      skills: ["MongoDB", "Supabase", "PostgreSQL", "Firebase", "AWS", "GCP", "Git", "Data Pipelines", "CI/CD"],
     },
   ];
 

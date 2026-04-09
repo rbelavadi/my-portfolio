@@ -49,7 +49,7 @@ export default function Hero() {
       </p>
 
       {/* buttons */}
-      <div className="mt-8 flex gap-4">
+      <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
         {/* Scroll to Projects */}
         <a
           href="#projects"

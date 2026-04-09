@@ -9,12 +9,12 @@ export default function Projects() {
       gradient: "linear-gradient(135deg, #6d28d9, #ec4899)",
       color: "from-indigo-900/50 to-purple-900/30",
       bullets: [
-        "Engineered a HIPAA-compliant medical intelligence system that digitizes handwritten prescriptions using OCR and structured parsing, applies PHI redaction (Microsoft Presidio), and standardizes medication data via RxNorm and FDA DailyMed.",
-        "Built a cloud-native backend and cross-platform interface enabling seniors to access verified medication insights and reminders.",
-        "Architected multilingual, privacy-focused extensions with localized voice features and adaptive tracking to improve adherence.",
+        "Built MediBuddy, an app that translates complex prescription labels into simple, plain-language medication guidance for elderly users using vision models and structured drug data.",
+        "Architected a HIPAA-aware AI pipeline: Claude Haiku vision extraction, RxNorm normalization, and FDA-verified DailyMed data secured with PostgreSQL Row Level Security and defense-in-depth access control.",
+        "Engineered prescription support mapping 500+ international brand names to standardized generics with Presidio PHI redaction.",
 ,
       ],
-      tags: ["Python", "OCR (Tesseract)", "Microsoft Presidio", "RxNorm", "DailyMed", "AWS", "React Native"],
+      tags: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Claude AI", "RxNorm", "DailyMed"],
       link: "https://github.com/rbelavadi/MediBuddy",
     },
     {
@@ -23,9 +23,8 @@ export default function Projects() {
       gradient: "linear-gradient(135deg, #a21caf, #ec4899)",
       color: "from-fuchsia-900/50 to-rose-900/30",
       bullets: [
-        "Designed and developed a map-based housing discovery platform for UCI students using React and Firebase, featuring dynamic listing creation and real-time data synchronization.",
-        "Deployed on Google Cloud Platform, implementing responsive design and optimized load times, leading to 40% faster rendering using component-level caching and asynchronous data fetching.",
-        "Integrated React Leaflet maps and Firebase APIs to display location-based listings, improving search discoverability and user navigation across 100+ demo data points.",
+        "Designed and developed a map-based housing discovery platform for UCI students using React and Firebase on GCP, implementing responsive design and optimized load times, leading to 40% faster rendering using component-level caching and asynchronous data fetching.",
+        "Integrated React Leaflet maps and Firebase APIs to display location-based listings, improving search discoverability and user navigation across 100+ demo data points. ",
       ],
       tags: ["React", "Tailwind CSS", "Firebase", "GCP", "Leaflet", "Material UI"],
       link: "https://github.com/rbelavadi/CampusNest",
@@ -73,13 +72,13 @@ export default function Projects() {
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 200}
-            className={`p-8 rounded-2xl bg-gradient-to-br ${project.color} border border-gray-800 shadow-lg hover:scale-[1.02] hover:shadow-pink-500/20 transition-all`}
+            className={`p-5 sm:p-8 rounded-2xl bg-gradient-to-br ${project.color} border border-gray-800 shadow-lg hover:scale-[1.02] hover:shadow-pink-500/20 transition-all`}
         >
             {/* Header Row */}
-            <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-start justify-between gap-2 mb-4">
+            <div className="flex items-center gap-3 flex-1 min-w-0">
                 <span
-                className={`text-2xl font-bold ${
+                className={`text-xl sm:text-2xl font-bold flex-shrink-0 ${
                     index === 0
                     ? "text-violet-400"
                     : index === 1
@@ -89,7 +88,7 @@ export default function Projects() {
                 >
                 {project.number}
                 </span>
-                <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
+                <h3 className="text-lg sm:text-2xl font-semibold text-white leading-snug">{project.title}</h3>
             </div>
 
             {/* GitHub Button */}

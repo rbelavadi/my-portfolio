@@ -80,11 +80,11 @@ export default function Experience() {
                 className={`absolute -left-8 top-1.5 w-4 h-4 rounded-full bg-gradient-to-br ${gradients[index]} shadow-md`}
               ></div>
 
-              <div className="flex justify-between items-center mb-1">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1 gap-1">
                 <h3 className="text-xl font-semibold text-white">
                   {exp.title}
                 </h3>
-                <span className="text-sm text-gray-300 bg-black/40 px-3 py-1 rounded-full border border-gray-700">
+                <span className="text-sm text-gray-300 bg-black/40 px-3 py-1 rounded-full border border-gray-700 self-start sm:self-auto flex-shrink-0">
                   {exp.period}
                 </span>
               </div>
